@@ -1,5 +1,49 @@
 *{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  height: 10vh;
+  background-color: #ae5fce;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links-menu {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h2 {
+  margin: 6.25rem;
+  font-size: 3.125rem;
+  color: #5b78c7;
+}
+
+@media screen and (max-width: 760px){
+  .nav-links{
+    position: fixed;
+    background-color: #ae5fce;
+  }
 }

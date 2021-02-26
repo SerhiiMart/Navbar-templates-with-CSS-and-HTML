@@ -9,10 +9,27 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  /* background-color: #5d4954; */
-  
+  background-color: #5d4954;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
+  color:thistle;
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  font-size: 1.3rem;
+}
 
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+
+.nav-links a {
+  color:thistle;
+  text-decoration: none;
+  letter-spacing: 0.1875rem;
+  font-weight: 400;
+  font-size: 0.8rem;
 }

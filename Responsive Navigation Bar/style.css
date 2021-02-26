@@ -26,6 +26,10 @@ nav {
   width: 33%;
 }
 
+.nav-links li {
+  list-style: none;
+}
+
 .nav-links a {
   color:thistle;
   text-decoration: none;

@@ -37,3 +37,20 @@ nav {
   font-weight: 400;
   font-size: 0.8rem;
 }
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div{
+  width: 1.5625rem;
+  height: 2px;
+  background-color:thistle;
+  margin: 0.3125rem;
+}
+
+@media screen and (max-width: 769px) {
+  div.example {
+    display: none;
+  }
+}

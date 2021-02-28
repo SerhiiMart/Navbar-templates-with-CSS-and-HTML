@@ -29,6 +29,12 @@ nav {
 .nav-links li {
   list-style: none;
 }
+.line {
+  width: 1.875rem;
+  height: 0.1875rem;
+  background-color: snow;
+  margin: 0.3125rem;
+}
 
 .nav-links a {
   color:thistle;
@@ -40,6 +46,7 @@ nav {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .hamburger div{
@@ -68,13 +75,17 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-     width: 60%;
+    width: 60%;
     transform: translateX(100%); 
+    transition: transform 0.8s ease-in;
   }
   .nav-links li {
     opacity: 0;
   }
   .hamburger {
     display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
   }
 }

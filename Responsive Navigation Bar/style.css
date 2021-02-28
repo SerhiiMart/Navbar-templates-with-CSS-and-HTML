@@ -61,5 +61,9 @@ nav {
     right: 0rem;
     height: 92vh;
     top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

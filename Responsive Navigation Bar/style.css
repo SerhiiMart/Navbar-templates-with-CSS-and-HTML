@@ -51,9 +51,10 @@ nav {
 
 .hamburger div{
   width: 1.5625rem;
-  height: 3px;
+  height: 2px;
   background-color:thistle;
   margin: 0.3125rem;
+  transition: transform 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,6 +85,7 @@ nav {
   }
   .hamburger {
     display: block;
+    
   }
  
 }
@@ -101,4 +103,14 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }

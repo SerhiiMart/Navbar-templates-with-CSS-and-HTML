@@ -26,3 +26,11 @@
 .link:hover {
   color: black;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+}

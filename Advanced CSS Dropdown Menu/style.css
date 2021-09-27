@@ -23,7 +23,7 @@
   padding: 0;
 }
 
-.link:hover {
+.dropdown > .link:focus, .link:hover {
   color: black;
 }
 
@@ -40,9 +40,13 @@
   border-radius: .25rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 .dropdown > .link:focus + .dropdown-menu {
   opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
